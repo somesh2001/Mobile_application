@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavAct">
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background_login">
+
+    </View>
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginLeft="290dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+
+    <!--        android:layout_marginBottom="506dp"-->
+    <!--        android:src="@drawable/login" />-->
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginRight="110dp"
+        android:textAlignment="center"
+        android:text="Login to Get \nStart your Gurney"
+        android:textStyle="bold"
+        android:fontFamily="@font/aclonica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="500dp"
+        android:layout_height="180dp"
+        app:lottie_autoPlay="true"
+
+        android:layout_marginLeft="220dp"
+        app:lottie_rawRes="@raw/login"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/loginemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+
+                android:hint="Enter Email"
+                style="@style/modifiedEditText"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:drawableLeft="@drawable/contact"
+                android:drawablePadding="10dp"
+                style="@style/modifiedEditText"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                style="@style/loginButton"
+                android:text="SIGN IN"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/createnew"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/aclonica"
+                android:textStyle="bold"
+                android:textColor="@color/colorItemName"
+                android:layout_gravity="center"
+                android:text="Create a new Account !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background_login2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:gravity="center"
+        android:layout_marginTop="470dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="3"/>
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Use other Methods"
+            android:textAlignment="center"
+            android:textColor="@color/colorItemName"
+            android:fontFamily="@font/aclonica"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="510dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/googlei" />
+    </LinearLayout>
+
+</RelativeLayout>

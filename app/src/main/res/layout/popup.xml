@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popupbackground"
+    android:layout_gravity="center">
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="match_parent"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+       app:lottie_rawRes="@raw/thankyou"
+       android:layout_height="200dp"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:fontFamily="@font/aclonica"
+       android:layout_marginTop="220dp"
+android:textColor="#02534B"
+       android:textAlignment="center"
+       android:textSize="17sp"
+       android:text="Thank You For Using \n Our Service"
+       android:layout_height="wrap_content"/>
+</RelativeLayout>

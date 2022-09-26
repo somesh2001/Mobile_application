@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavAct">
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background_login">
+
+    </View>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_marginRight="110dp"
+        android:text="Create Your new \n Account "
+        android:textStyle="bold"
+
+        android:fontFamily="@font/aclonica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="500dp"
+        android:layout_height="180dp"
+        app:lottie_autoPlay="true"
+
+        android:layout_marginLeft="220dp"
+        app:lottie_rawRes="@raw/login"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/name"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                style="@style/modifiedEditText"
+                android:ems="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Name"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="15dp"
+                style="@style/modifiedEditText"
+                android:ems="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="15dp"
+                style="@style/modifiedEditText"
+                android:ems="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                />
+            <EditText
+                android:id="@+id/contact"
+                style="@style/modifiedEditText"
+                android:drawableLeft="@drawable/contact"
+                android:drawablePadding="15dp"
+                android:ems="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Contact"
+
+                android:inputType="number"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup"
+                style="@style/loginButton"
+                android:text="SIGN UP"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="3"/>
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Use other Methods"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/colorItemName"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/googlei" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background_login2"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
